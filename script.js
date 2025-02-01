@@ -298,13 +298,7 @@ function drawText() {
         fontSize,
         lineHeight
       );
-    } else {
-      context.fillText(
-        "Happy Birthday to my Bestfriend in Arms, Sister who cares, Mother who loves, and Partner in Crime!  I Love You ❤️!!",
-        canvas.width / 2,
-        canvas.height / 2 + 120
-      );
-    }
+    } 
   
     thirdOpacity = thirdOpacity + 0.01;
   }
