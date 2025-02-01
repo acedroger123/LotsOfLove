@@ -286,7 +286,7 @@ function drawText() {
   if (frameNumber >= 3600 && frameNumber < 99999) {
     context.fillStyle = `rgba(255, 255, 255, ${thirdOpacity})`;
   
-    if (window.innerWidth < 800) {
+    if (window.innerWidth < 1800) {
       drawTextWithLineBreaks(
         [
           "Happy Birthday to my Bestfriend in Arms,",
