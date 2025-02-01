@@ -286,7 +286,7 @@ function drawText() {
   if (frameNumber >= 3600 && frameNumber < 99999) {
     context.fillStyle = `rgba(255, 255, 255, ${thirdOpacity})`;
   
-  
+    if (window.innerWidth < 400) {
       drawTextWithLineBreaks(
         [
           "Happy Birthday to my Bestfriend in Arms,",
@@ -298,7 +298,13 @@ function drawText() {
         fontSize,
         lineHeight
       );
-    
+    } else {
+      context.fillText(
+        "Happy Birthday to my Bestfriend in Arms, Sister who cares, Mother who loves, and Partner in Crime!  I Love You ❤️!!",
+        canvas.width / 2,
+        canvas.height / 2 + 120
+      );
+    }
   
     thirdOpacity = thirdOpacity + 0.01;
   }
