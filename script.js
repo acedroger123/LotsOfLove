@@ -94,7 +94,7 @@ function drawText() {
   if (frameNumber > 600 && frameNumber < 900) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
 
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 1800) {
       drawTextWithLineBreaks(
         ["amongst trillions and trillions of stars,", "over billions of years"],
         canvas.width / 2,
@@ -115,7 +115,7 @@ function drawText() {
   if (frameNumber >= 900 && frameNumber < 1200) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
 
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 1800) {
       drawTextWithLineBreaks(
         ["amongst trillions and trillions of stars,", "over billions of years"],
         canvas.width / 2,
@@ -184,7 +184,7 @@ function drawText() {
   if (frameNumber > 2400 && frameNumber < 2700) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
 
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 1800) {
       drawTextWithLineBreaks(
         [
           "and yet here I am to get the impossible",
@@ -208,7 +208,7 @@ function drawText() {
   if (frameNumber >= 2700 && frameNumber < 3000) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
 
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 1800) {
       drawTextWithLineBreaks(
         [
           "and yet here I am to get the impossible",
@@ -236,7 +236,7 @@ function drawText() {
   if (frameNumber > 3000 && frameNumber < 99999) {
     context.fillStyle = `rgba(255, 255, 255, ${opacity})`;
 
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 1800) {
       drawTextWithLineBreaks(
         [
           "I love you so much , more than",
@@ -261,7 +261,7 @@ function drawText() {
   if (frameNumber >= 3300 && frameNumber < 99999) {
     context.fillStyle = `rgba(255, 255, 255, ${secondOpacity})`;
 
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 1800) {
       drawTextWithLineBreaks(
         [
           "and I can't wait to spend all the time in",
