@@ -1,0 +1,94 @@
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+  cursor: url("./images/pointer.png"), auto;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  background: #111;
+}
+
+#valentinesButton {
+  display: none;
+  text-decoration: none;
+  position: absolute;
+  background-color: #ffbc2d;
+  border: 2px solid #ffffff;
+  color: #f51010;
+  cursor: pointer;
+  height: 50px;
+  font-size: 16px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  border-radius: 10px;
+  top: calc(50% + 150px);
+  left: 50%;
+  transform: translateX(-50%);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#valentinesButton:hover {
+  background-color: #fefefe;
+  color: rgb(0, 86, 245);
+}
+
+#valentinesButton a {
+  text-decoration: none;
+  color: red;
+}
+
+#Button, #ContinueButton {
+  display: block;
+  text-decoration: none;
+  position: fixed;
+  background-color: #ffbc2d;
+  border: 2px solid #ffffff;
+  color: #f51010;
+  cursor: pointer;
+  height: 50px;
+  font-size: 16px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  border-radius: 10px;
+  padding: 0 20px;
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#Button {
+  top: calc(50% + 150px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#ContinueButton {
+  top: calc(50% + 250px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#Button.visible, #ContinueButton.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+#Button:hover, #ContinueButton:hover {
+  background-color: #fefefe;
+  color: rgb(0, 86, 245);
+  transform: translateX(-50%) scale(1.05);
+}
+
+#ContinueButton a {
+  text-decoration: none;
+  color: red;
+}
+
+#Button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+  transform: translateX(-50%) scale(1);
+}
